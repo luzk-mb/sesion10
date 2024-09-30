@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-        let esAdulto=true;
-        let tienepermiso=true;
-        let puedentrar=esAdulto && tienepermiso;
+        let esMayorDeEdad=true;
+        let tieneLicencia=true;
+        let puedeconducir=esMayorDeEdad && tieneLicencia;
 
-        document.write("Puede entrar: ",puedentrar);
+        console.log("¿Puede conducir?: ",puedeconducir);
+
+        let errordeconducir=esMayorDeEdad || tieneLicencia;
+        console.log(" ¿puede conducir con errores? ",errorconducir);
     </script>
 </body>
 </html>
